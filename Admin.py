@@ -18,7 +18,7 @@ class Admin(commands.Cog):
 	# Events
 	@commands.Cog.listener()
 	async def on_ready(self):
-		await bot.change_presence(status=discord.Status.idle, activity=discord.Game("with you"))
+		await self.bot.change_presence(status=discord.Status.idle, activity=discord.Game("with you"))
 
 	@commands.Cog.listener()
 	async def on_command_error(self, ctx, error):
